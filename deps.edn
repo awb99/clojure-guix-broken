@@ -1,0 +1,15 @@
+{:deps
+ {org.clojure/clojure    {:mvn/version "1.11.3"}
+  aleph/aleph {:mvn/version "0.8.1"}
+  }
+
+ :aliases
+ {:info {:jvm-opts ["-Dmaven.wagon.rto=90000"
+                    "-Dio.netty.transport.noNative=true"]
+         :exec-fn demo2/show-props}
+  
+  :curl {:extra-deps {aleph/aleph {:mvn/version "0.8.1"}}
+         :jvm-opts ["-Dmaven.wagon.rto=90000"
+                    "-Dio.netty.transport.noNative=true"]
+         :exec-fn demo/download-link
+         :exec-args {}}}}
