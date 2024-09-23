@@ -23,7 +23,7 @@ io.netty.channel.epoll.Epoll
 
 first do this:
 
-guix time-machine --commit=98e4bfe96f2c99daa0b66b65c1d379bb385301a8 -- guix shell --pure --development --check clojure-tools openjdk coreutils
+guix time-machine --commit=98e4bfe96f2c99daa0b66b65c1d379bb385301a8 -- shell --pure --development --check clojure-tools openjdk coreutils
 
 then 
 
